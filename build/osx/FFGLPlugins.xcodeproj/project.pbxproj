@@ -193,7 +193,58 @@
 		65D4D1ED23193DB000D12558 /* FFGLThumbnailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D4D1BF23193C9200D12558 /* FFGLThumbnailInfo.cpp */; };
 		65D4D1EE23193DB000D12558 /* FFGLThumbnailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D4D1BF23193C9200D12558 /* FFGLThumbnailInfo.cpp */; };
 		65D4D1F023193F7A00D12558 /* FFGLThumbnailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D4D1BF23193C9200D12558 /* FFGLThumbnailInfo.cpp */; };
-		D69416C91B904EA200D30319 /* AddSubtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D69416A11B90436100D30319 /* AddSubtract.cpp */; };
+		BA3179D326D01586000AF86B /* FFGLParamFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480612306FD13007257C5 /* FFGLParamFFT.cpp */; };
+		BA3179D426D01586000AF86B /* FFGLParamOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6524807E2306FD14007257C5 /* FFGLParamOption.cpp */; };
+		BA3179D526D01586000AF86B /* FFGLUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708D421635F82002B8B05 /* FFGLUtilities.cpp */; };
+		BA3179D626D01586000AF86B /* FFGLPluginManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708B421635F6D002B8B05 /* FFGLPluginManager.cpp */; };
+		BA3179D726D01586000AF86B /* FFGLScopedBufferBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708DC21635F82002B8B05 /* FFGLScopedBufferBinding.cpp */; };
+		BA3179D826D01586000AF86B /* FFGLScopedShaderBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708E221635F83002B8B05 /* FFGLScopedShaderBinding.cpp */; };
+		BA3179D926D01586000AF86B /* FFGLPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480702306FD13007257C5 /* FFGLPlugin.cpp */; };
+		BA3179DA26D01586000AF86B /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708B621635F6D002B8B05 /* FFGLPluginInfo.cpp */; };
+		BA3179DB26D01586000AF86B /* FFGLLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F442E338253DE801008313C0 /* FFGLLog.cpp */; };
+		BA3179DC26D01586000AF86B /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708B721635F6D002B8B05 /* FFGLPluginInfoData.cpp */; };
+		BA3179DD26D01586000AF86B /* FFGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708B321635F6D002B8B05 /* FFGL.cpp */; };
+		BA3179DE26D01586000AF86B /* FFGLScopedRenderBufferBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65BE5BD7231D65DA00CDDFA7 /* FFGLScopedRenderBufferBinding.cpp */; };
+		BA3179DF26D01586000AF86B /* FFGLParamEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6524807C2306FD14007257C5 /* FFGLParamEvent.cpp */; };
+		BA3179E026D01586000AF86B /* FFGLRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480662306FD13007257C5 /* FFGLRandom.cpp */; };
+		BA3179E126D01586000AF86B /* FFGLScreenQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708D521635F82002B8B05 /* FFGLScreenQuad.cpp */; };
+		BA3179E226D01586000AF86B /* FFGLSmoothValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480672306FD13007257C5 /* FFGLSmoothValue.cpp */; };
+		BA3179E326D01586000AF86B /* FFGLParamRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6524806F2306FD13007257C5 /* FFGLParamRange.cpp */; };
+		BA3179E426D01586000AF86B /* FFGLFBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708DE21635F82002B8B05 /* FFGLFBO.cpp */; };
+		BA3179E526D01586000AF86B /* FFGLThumbnailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D4D1BF23193C9200D12558 /* FFGLThumbnailInfo.cpp */; };
+		BA3179E626D01586000AF86B /* FFGLParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480692306FD13007257C5 /* FFGLParam.cpp */; };
+		BA3179E726D01586000AF86B /* FFGLMixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480712306FD13007257C5 /* FFGLMixer.cpp */; };
+		BA3179E826D01586000AF86B /* FFGLPluginSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708BA21635F6E002B8B05 /* FFGLPluginSDK.cpp */; };
+		BA3179E926D01586000AF86B /* FFGLScopedSamplerActivation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708D221635F82002B8B05 /* FFGLScopedSamplerActivation.cpp */; };
+		BA3179EA26D01586000AF86B /* FFGLParamText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6524806C2306FD13007257C5 /* FFGLParamText.cpp */; };
+		BA3179EB26D01586000AF86B /* FFGLAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480792306FD14007257C5 /* FFGLAudio.cpp */; };
+		BA3179EC26D01586000AF86B /* FFGLScopedFBOBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65BE5BD6231D65DA00CDDFA7 /* FFGLScopedFBOBinding.cpp */; };
+		BA3179ED26D01586000AF86B /* FFGLScopedVAOBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708DA21635F82002B8B05 /* FFGLScopedVAOBinding.cpp */; };
+		BA3179EE26D01586000AF86B /* FFGLParamBool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480762306FD14007257C5 /* FFGLParamBool.cpp */; };
+		BA3179EF26D01586000AF86B /* FFGLParamTrigger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480782306FD14007257C5 /* FFGLParamTrigger.cpp */; };
+		BA3179F026D01586000AF86B /* FFGLScopedTextureBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708D321635F82002B8B05 /* FFGLScopedTextureBinding.cpp */; };
+		BA3179F126D01586000AF86B /* FFGLEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480652306FD13007257C5 /* FFGLEffect.cpp */; };
+		BA3179F226D01586000AF86B /* FFGLShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708E321635F83002B8B05 /* FFGLShader.cpp */; };
+		BA3179F326D01586000AF86B /* FFGLSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6524805F2306FD13007257C5 /* FFGLSource.cpp */; };
+		BA49A4EC26E4059E003020DC /* TextRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA49A4E926E40099003020DC /* TextRenderer.cpp */; };
+		BA49A4ED26E405CC003020DC /* stb_truetype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACA4E3E26E1FF09009D2C19 /* stb_truetype.cpp */; };
+		BA49A4EE26E405E1003020DC /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACA4E4026E3770F009D2C19 /* Utils.cpp */; };
+		BA49A4F326E4E948003020DC /* try_stb_truetype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA49A4F126E4E908003020DC /* try_stb_truetype.cpp */; };
+		BA49A4F426E4E952003020DC /* stb_truetype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACA4E3E26E1FF09009D2C19 /* stb_truetype.cpp */; };
+		BA49A4F826E517AD003020DC /* HTextChaser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA49A4F726E517AD003020DC /* HTextChaser.cpp */; };
+		BA49A4FD26E64BAD003020DC /* FontRasterizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA49A4FB26E64BAD003020DC /* FontRasterizer.cpp */; };
+		BA5E31BA26EB939200140FD4 /* HPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA5E31B826EB939200140FD4 /* HPlugin.cpp */; };
+		BA5E31BB26EBB0D900140FD4 /* FontManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9616E826EA23A700C6FD9F /* FontManager.cpp */; };
+		BA5E31BC26EBB0E000140FD4 /* TextRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA49A4E926E40099003020DC /* TextRenderer.cpp */; };
+		BA5E31BD26EBB13F00140FD4 /* FontRasterizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA49A4FB26E64BAD003020DC /* FontRasterizer.cpp */; };
+		BA5E31BE26EBB14400140FD4 /* stb_truetype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACA4E3E26E1FF09009D2C19 /* stb_truetype.cpp */; };
+		BA5E31BF26EBB19B00140FD4 /* ariblk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9616E626EA1F0800C6FD9F /* ariblk.ttf */; };
+		BA894ACC26EF827900685DDB /* HPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA5E31B826EB939200140FD4 /* HPlugin.cpp */; };
+		BA9616E726EA1F0800C6FD9F /* ariblk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9616E626EA1F0800C6FD9F /* ariblk.ttf */; };
+		BA9616EA26EA23A700C6FD9F /* FontManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9616E826EA23A700C6FD9F /* FontManager.cpp */; };
+		BACA4E4226E3770F009D2C19 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACA4E4026E3770F009D2C19 /* Utils.cpp */; };
+		BACA4E4826E393C8009D2C19 /* BaseRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BACA4E4626E393C8009D2C19 /* BaseRenderer.cpp */; };
+		D69416C91B904EA200D30319 /* HCloner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D69416A11B90436100D30319 /* HCloner.cpp */; };
 		DB4B641D1FF84E910069DA80 /* Add.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB4B63E11FF8453A0069DA80 /* Add.cpp */; };
 		F442E33A253DE80B008313C0 /* FFGLLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F442E338253DE801008313C0 /* FFGLLog.cpp */; };
 		F442E33B253DE80B008313C0 /* FFGLLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F442E338253DE801008313C0 /* FFGLLog.cpp */; };
@@ -274,6 +325,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BACA4E3026DF64F5009D2C19 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1B2708B321635F6D002B8B05 /* FFGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFGL.cpp; sourceTree = "<group>"; };
 		1B2708B421635F6D002B8B05 /* FFGLPluginManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFGLPluginManager.cpp; sourceTree = "<group>"; };
@@ -317,7 +380,7 @@
 		2FD1224618853D640009EBA8 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		2FD1224818853D700009EBA8 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		2FD1225318853FFB0009EBA8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		2FD1226B188540470009EBA8 /* AddSubtract.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddSubtract.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD1226B188540470009EBA8 /* HCloner.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCloner.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6524805F2306FD13007257C5 /* FFGLSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFGLSource.cpp; sourceTree = "<group>"; };
 		652480602306FD13007257C5 /* FFGLParamTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFGLParamTrigger.h; sourceTree = "<group>"; };
 		652480612306FD13007257C5 /* FFGLParamFFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFGLParamFFT.cpp; sourceTree = "<group>"; };
@@ -376,13 +439,37 @@
 		A9F28D5818B37D0C007D7C87 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A9F28D5A18B37D12007D7C87 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A9F92EA9201A1C1500527E48 /* Particles.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Particles.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3179F826D01586000AF86B /* HTextChaser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTextChaser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA49A4E926E40099003020DC /* TextRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderer.cpp; sourceTree = "<group>"; };
+		BA49A4EA26E40099003020DC /* TextRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextRenderer.h; sourceTree = "<group>"; };
+		BA49A4F126E4E908003020DC /* try_stb_truetype.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = try_stb_truetype.cpp; sourceTree = "<group>"; };
+		BA49A4F226E4E908003020DC /* try_stb_truetype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = try_stb_truetype.h; sourceTree = "<group>"; };
+		BA49A4F626E517AD003020DC /* HTextChaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTextChaser.h; sourceTree = "<group>"; };
+		BA49A4F726E517AD003020DC /* HTextChaser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HTextChaser.cpp; sourceTree = "<group>"; };
+		BA49A4FB26E64BAD003020DC /* FontRasterizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FontRasterizer.cpp; sourceTree = "<group>"; };
+		BA49A4FC26E64BAD003020DC /* FontRasterizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontRasterizer.h; sourceTree = "<group>"; };
+		BA5E31B826EB939200140FD4 /* HPlugin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HPlugin.cpp; sourceTree = "<group>"; };
+		BA5E31B926EB939200140FD4 /* HPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPlugin.h; sourceTree = "<group>"; };
+		BA9616E626EA1F0800C6FD9F /* ariblk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ariblk.ttf; sourceTree = "<group>"; };
+		BA9616E826EA23A700C6FD9F /* FontManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FontManager.cpp; sourceTree = "<group>"; };
+		BA9616E926EA23A700C6FD9F /* FontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
+		BACA4E2526DE180C009D2C19 /* stb_truetype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		BACA4E3226DF64F5009D2C19 /* TestTrueType */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestTrueType; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACA4E3E26E1FF09009D2C19 /* stb_truetype.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stb_truetype.cpp; sourceTree = "<group>"; };
+		BACA4E4026E3770F009D2C19 /* Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		BACA4E4126E3770F009D2C19 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		BACA4E4326E39113009D2C19 /* ShapeRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeRenderer.cpp; sourceTree = "<group>"; };
+		BACA4E4426E39113009D2C19 /* ShapeRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeRenderer.h; sourceTree = "<group>"; };
+		BACA4E4626E393C8009D2C19 /* BaseRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseRenderer.cpp; sourceTree = "<group>"; };
+		BACA4E4726E393C8009D2C19 /* BaseRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRenderer.h; sourceTree = "<group>"; };
+		BAE5231726ED0A2100FE26C6 /* circleShaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = circleShaders.h; sourceTree = "<group>"; };
 		D69416961B9040DA00D30319 /* PluginIds.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = PluginIds.txt; path = ../PluginIds.txt; sourceTree = "<group>"; };
 		D69416971B9041FA00D30319 /* FFGLPlugin-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FFGLPlugin-Info.plist"; sourceTree = "<group>"; };
 		D694169A1B90421F00D30319 /* FFGL_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FFGL_Debug.xcconfig; sourceTree = "<group>"; };
 		D694169B1B90421F00D30319 /* FFGL_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FFGL_Release.xcconfig; sourceTree = "<group>"; };
 		D694169C1B90421F00D30319 /* FFGL.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FFGL.xcconfig; sourceTree = "<group>"; };
-		D69416A11B90436100D30319 /* AddSubtract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AddSubtract.cpp; sourceTree = "<group>"; };
-		D69416A21B90436100D30319 /* AddSubtract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSubtract.h; sourceTree = "<group>"; };
+		D69416A11B90436100D30319 /* HCloner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HCloner.cpp; sourceTree = "<group>"; };
+		D69416A21B90436100D30319 /* HCloner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCloner.h; sourceTree = "<group>"; };
 		DB4B63E11FF8453A0069DA80 /* Add.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Add.cpp; path = ../../plugins/Add/Add.cpp; sourceTree = "<group>"; };
 		DB4B63E21FF8453A0069DA80 /* Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Add.h; path = ../../plugins/Add/Add.h; sourceTree = "<group>"; };
 		DB4B63E31FF8455E0069DA80 /* FFGLGradients.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FFGLGradients.cpp; sourceTree = "<group>"; };
@@ -416,6 +503,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A9F92EA5201A1C1500527E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3179F426D01586000AF86B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACA4E2F26DF64F5009D2C19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -503,6 +604,8 @@
 		2DA285910AEE5D640030A4DD = {
 			isa = PBXGroup;
 			children = (
+				BA49A4F026E49310003020DC /* resources */,
+				BA49A4E826E4007E003020DC /* h_common */,
 				D69416991B90420600D30319 /* xcconfig */,
 				D69416971B9041FA00D30319 /* FFGLPlugin-Info.plist */,
 				D69416961B9040DA00D30319 /* PluginIds.txt */,
@@ -519,12 +622,14 @@
 		2DA285A10AEE5E480030A4DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FD1226B188540470009EBA8 /* AddSubtract.bundle */,
+				2FD1226B188540470009EBA8 /* HCloner.bundle */,
 				DB4B63F41FF845820069DA80 /* Add.bundle */,
 				DB4B64161FF845920069DA80 /* Gradients.bundle */,
 				A9F92EA9201A1C1500527E48 /* Particles.bundle */,
 				65D4D1E723193D0000D12558 /* CustomThumbnail.bundle */,
 				F49A35EE264ECC2A008127CC /* Events.bundle */,
+				BA3179F826D01586000AF86B /* HTextChaser.bundle */,
+				BACA4E3226DF64F5009D2C19 /* TestTrueType */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -636,6 +741,48 @@
 			path = ../../source/plugins/Add;
 			sourceTree = "<group>";
 		};
+		BA49A4E826E4007E003020DC /* h_common */ = {
+			isa = PBXGroup;
+			children = (
+				BACA4E3E26E1FF09009D2C19 /* stb_truetype.cpp */,
+				BACA4E2526DE180C009D2C19 /* stb_truetype.h */,
+				BA49A4E926E40099003020DC /* TextRenderer.cpp */,
+				BA49A4EA26E40099003020DC /* TextRenderer.h */,
+				BA49A4FB26E64BAD003020DC /* FontRasterizer.cpp */,
+				BA49A4FC26E64BAD003020DC /* FontRasterizer.h */,
+				BACA4E4026E3770F009D2C19 /* Utils.cpp */,
+				BACA4E4126E3770F009D2C19 /* Utils.h */,
+				BA49A4F126E4E908003020DC /* try_stb_truetype.cpp */,
+				BA49A4F226E4E908003020DC /* try_stb_truetype.h */,
+				BA9616E826EA23A700C6FD9F /* FontManager.cpp */,
+				BA9616E926EA23A700C6FD9F /* FontManager.h */,
+				BA5E31B826EB939200140FD4 /* HPlugin.cpp */,
+				BA5E31B926EB939200140FD4 /* HPlugin.h */,
+				BAE5231726ED0A2100FE26C6 /* circleShaders.h */,
+			);
+			name = h_common;
+			path = ../../source/h_common;
+			sourceTree = "<group>";
+		};
+		BA49A4F026E49310003020DC /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA9616E626EA1F0800C6FD9F /* ariblk.ttf */,
+			);
+			name = resources;
+			path = ../../resources;
+			sourceTree = "<group>";
+		};
+		BA49A4F526E517AD003020DC /* HTextChaser */ = {
+			isa = PBXGroup;
+			children = (
+				BA49A4F726E517AD003020DC /* HTextChaser.cpp */,
+				BA49A4F626E517AD003020DC /* HTextChaser.h */,
+			);
+			name = HTextChaser;
+			path = ../../source/plugins/HTextChaser;
+			sourceTree = "<group>";
+		};
 		D69416991B90420600D30319 /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,14 +793,18 @@
 			name = xcconfig;
 			sourceTree = "<group>";
 		};
-		D69416A01B90436100D30319 /* AddSubtract */ = {
+		D69416A01B90436100D30319 /* HCloner */ = {
 			isa = PBXGroup;
 			children = (
-				D69416A21B90436100D30319 /* AddSubtract.h */,
-				D69416A11B90436100D30319 /* AddSubtract.cpp */,
+				D69416A11B90436100D30319 /* HCloner.cpp */,
+				D69416A21B90436100D30319 /* HCloner.h */,
+				BACA4E4326E39113009D2C19 /* ShapeRenderer.cpp */,
+				BACA4E4426E39113009D2C19 /* ShapeRenderer.h */,
+				BACA4E4626E393C8009D2C19 /* BaseRenderer.cpp */,
+				BACA4E4726E393C8009D2C19 /* BaseRenderer.h */,
 			);
-			name = AddSubtract;
-			path = ../../source/plugins/AddSubtract;
+			name = HCloner;
+			path = ../../source/plugins/HCloner;
 			sourceTree = "<group>";
 		};
 		D6DB1A291B9054A9007E6883 /* ffgl */ = {
@@ -714,7 +865,7 @@
 		E8D165D30C5E174D0035D796 /* effect plugins */ = {
 			isa = PBXGroup;
 			children = (
-				D69416A01B90436100D30319 /* AddSubtract */,
+				D69416A01B90436100D30319 /* HCloner */,
 			);
 			name = "effect plugins";
 			sourceTree = "<group>";
@@ -731,6 +882,7 @@
 			isa = PBXGroup;
 			children = (
 				F49A35F7264ECC9C008127CC /* Events */,
+				BA49A4F526E517AD003020DC /* HTextChaser */,
 				65D4D1C023193C9B00D12558 /* CustomThumbnail */,
 				1B27090821635FA2002B8B05 /* Particles */,
 				A91E037820173C1F0018E2D0 /* Gradients */,
@@ -750,9 +902,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FD12258188540470009EBA8 /* AddSubtract */ = {
+		2FD12258188540470009EBA8 /* HCloner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FD12268188540470009EBA8 /* Build configuration list for PBXNativeTarget "AddSubtract" */;
+			buildConfigurationList = 2FD12268188540470009EBA8 /* Build configuration list for PBXNativeTarget "HCloner" */;
 			buildPhases = (
 				2FD1225B188540470009EBA8 /* Resources */,
 				2FD1225C188540470009EBA8 /* Sources */,
@@ -762,9 +914,9 @@
 			);
 			dependencies = (
 			);
-			name = AddSubtract;
+			name = HCloner;
 			productName = FFGLBrightness;
-			productReference = 2FD1226B188540470009EBA8 /* AddSubtract.bundle */;
+			productReference = 2FD1226B188540470009EBA8 /* HCloner.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		65D4D1C323193D0000D12558 /* CustomThumbnail */ = {
@@ -800,6 +952,40 @@
 			productName = FFGLBrightness;
 			productReference = A9F92EA9201A1C1500527E48 /* Particles.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		BA3179CF26D01586000AF86B /* HTextChaser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3179F526D01586000AF86B /* Build configuration list for PBXNativeTarget "HTextChaser" */;
+			buildPhases = (
+				BA3179D026D01586000AF86B /* Resources */,
+				BA3179D126D01586000AF86B /* Sources */,
+				BA3179F426D01586000AF86B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTextChaser;
+			productName = FFGLBrightness;
+			productReference = BA3179F826D01586000AF86B /* HTextChaser.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BACA4E3126DF64F5009D2C19 /* TestTrueType */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACA4E3626DF64F5009D2C19 /* Build configuration list for PBXNativeTarget "TestTrueType" */;
+			buildPhases = (
+				BACA4E2E26DF64F5009D2C19 /* Sources */,
+				BACA4E2F26DF64F5009D2C19 /* Frameworks */,
+				BACA4E3026DF64F5009D2C19 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestTrueType;
+			productName = TestTrueType;
+			productReference = BACA4E3226DF64F5009D2C19 /* TestTrueType */;
+			productType = "com.apple.product-type.tool";
 		};
 		DB4B63E51FF845820069DA80 /* Add */ = {
 			isa = PBXNativeTarget;
@@ -859,6 +1045,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					BACA4E3126DF64F5009D2C19 = {
+						CreatedOnToolsVersion = 12.5.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 2DA285940AEE5D640030A4DD /* Build configuration list for PBXProject "FFGLPlugins" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -877,12 +1069,14 @@
 			projectRoot = "";
 			targets = (
 				D6369DBB1AAF108500B0CC43 /* ALL */,
+				2FD12258188540470009EBA8 /* HCloner */,
+				BA3179CF26D01586000AF86B /* HTextChaser */,
 				DB4B64071FF845920069DA80 /* Gradients */,
-				2FD12258188540470009EBA8 /* AddSubtract */,
 				DB4B63E51FF845820069DA80 /* Add */,
 				A9F92E9A201A1C1500527E48 /* Particles */,
 				65D4D1C323193D0000D12558 /* CustomThumbnail */,
 				F49A35C5264ECC2A008127CC /* Events */,
+				BACA4E3126DF64F5009D2C19 /* TestTrueType */,
 			);
 		};
 /* End PBXProject section */
@@ -892,6 +1086,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5E31BF26EBB19B00140FD4 /* ariblk.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +1101,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3179D026D01586000AF86B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9616E726EA1F0800C6FD9F /* ariblk.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +1140,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5E31BE26EBB14400140FD4 /* stb_truetype.cpp in Sources */,
+				BA5E31BD26EBB13F00140FD4 /* FontRasterizer.cpp in Sources */,
+				BA5E31BC26EBB0E000140FD4 /* TextRenderer.cpp in Sources */,
+				BA5E31BB26EBB0D900140FD4 /* FontManager.cpp in Sources */,
+				BA5E31BA26EB939200140FD4 /* HPlugin.cpp in Sources */,
+				D69416C91B904EA200D30319 /* HCloner.cpp in Sources */,
+				BACA4E4826E393C8009D2C19 /* BaseRenderer.cpp in Sources */,
+				BACA4E4226E3770F009D2C19 /* Utils.cpp in Sources */,
 				652480842306FD14007257C5 /* FFGLParamFFT.cpp in Sources */,
 				652480B82306FD14007257C5 /* FFGLParamOption.cpp in Sources */,
 				1B2708ED21635F83002B8B05 /* FFGLUtilities.cpp in Sources */,
@@ -967,7 +1178,6 @@
 				652480A82306FD14007257C5 /* FFGLParamBool.cpp in Sources */,
 				652480AC2306FD14007257C5 /* FFGLParamTrigger.cpp in Sources */,
 				1B2708E921635F83002B8B05 /* FFGLScopedTextureBinding.cpp in Sources */,
-				D69416C91B904EA200D30319 /* AddSubtract.cpp in Sources */,
 				652480882306FD14007257C5 /* FFGLEffect.cpp in Sources */,
 				1B27090521635F83002B8B05 /* FFGLShader.cpp in Sources */,
 				652480802306FD14007257C5 /* FFGLSource.cpp in Sources */,
@@ -1056,6 +1266,62 @@
 				652480A62306FD14007257C5 /* FFGLMixer.cpp in Sources */,
 				1B2708EB21635F83002B8B05 /* FFGLScopedTextureBinding.cpp in Sources */,
 				65BE5BDC231D65F900CDDFA7 /* FFGLScopedRenderBufferBinding.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3179D126D01586000AF86B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA894ACC26EF827900685DDB /* HPlugin.cpp in Sources */,
+				BA49A4EE26E405E1003020DC /* Utils.cpp in Sources */,
+				BA49A4ED26E405CC003020DC /* stb_truetype.cpp in Sources */,
+				BA49A4EC26E4059E003020DC /* TextRenderer.cpp in Sources */,
+				BA49A4FD26E64BAD003020DC /* FontRasterizer.cpp in Sources */,
+				BA49A4F826E517AD003020DC /* HTextChaser.cpp in Sources */,
+				BA3179D326D01586000AF86B /* FFGLParamFFT.cpp in Sources */,
+				BA3179D426D01586000AF86B /* FFGLParamOption.cpp in Sources */,
+				BA3179D526D01586000AF86B /* FFGLUtilities.cpp in Sources */,
+				BA3179D626D01586000AF86B /* FFGLPluginManager.cpp in Sources */,
+				BA3179D726D01586000AF86B /* FFGLScopedBufferBinding.cpp in Sources */,
+				BA3179D826D01586000AF86B /* FFGLScopedShaderBinding.cpp in Sources */,
+				BA3179D926D01586000AF86B /* FFGLPlugin.cpp in Sources */,
+				BA3179DA26D01586000AF86B /* FFGLPluginInfo.cpp in Sources */,
+				BA3179DB26D01586000AF86B /* FFGLLog.cpp in Sources */,
+				BA3179DC26D01586000AF86B /* FFGLPluginInfoData.cpp in Sources */,
+				BA3179DD26D01586000AF86B /* FFGL.cpp in Sources */,
+				BA3179DE26D01586000AF86B /* FFGLScopedRenderBufferBinding.cpp in Sources */,
+				BA9616EA26EA23A700C6FD9F /* FontManager.cpp in Sources */,
+				BA3179DF26D01586000AF86B /* FFGLParamEvent.cpp in Sources */,
+				BA3179E026D01586000AF86B /* FFGLRandom.cpp in Sources */,
+				BA3179E126D01586000AF86B /* FFGLScreenQuad.cpp in Sources */,
+				BA3179E226D01586000AF86B /* FFGLSmoothValue.cpp in Sources */,
+				BA3179E326D01586000AF86B /* FFGLParamRange.cpp in Sources */,
+				BA3179E426D01586000AF86B /* FFGLFBO.cpp in Sources */,
+				BA3179E526D01586000AF86B /* FFGLThumbnailInfo.cpp in Sources */,
+				BA3179E626D01586000AF86B /* FFGLParam.cpp in Sources */,
+				BA3179E726D01586000AF86B /* FFGLMixer.cpp in Sources */,
+				BA3179E826D01586000AF86B /* FFGLPluginSDK.cpp in Sources */,
+				BA3179E926D01586000AF86B /* FFGLScopedSamplerActivation.cpp in Sources */,
+				BA3179EA26D01586000AF86B /* FFGLParamText.cpp in Sources */,
+				BA3179EB26D01586000AF86B /* FFGLAudio.cpp in Sources */,
+				BA3179EC26D01586000AF86B /* FFGLScopedFBOBinding.cpp in Sources */,
+				BA3179ED26D01586000AF86B /* FFGLScopedVAOBinding.cpp in Sources */,
+				BA3179EE26D01586000AF86B /* FFGLParamBool.cpp in Sources */,
+				BA3179EF26D01586000AF86B /* FFGLParamTrigger.cpp in Sources */,
+				BA3179F026D01586000AF86B /* FFGLScopedTextureBinding.cpp in Sources */,
+				BA3179F126D01586000AF86B /* FFGLEffect.cpp in Sources */,
+				BA3179F226D01586000AF86B /* FFGLShader.cpp in Sources */,
+				BA3179F326D01586000AF86B /* FFGLSource.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACA4E2E26DF64F5009D2C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA49A4F426E4E952003020DC /* stb_truetype.cpp in Sources */,
+				BA49A4F326E4E948003020DC /* try_stb_truetype.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1197,7 +1463,7 @@
 		};
 		D6369DC21AAF109800B0CC43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2FD12258188540470009EBA8 /* AddSubtract */;
+			target = 2FD12258188540470009EBA8 /* HCloner */;
 			targetProxy = D6369DC11AAF109800B0CC43 /* PBXContainerItemProxy */;
 		};
 		DB4B64191FF8459E0069DA80 /* PBXTargetDependency */ = {
@@ -1306,7 +1572,8 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "FFGLPlugin-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = AddSubtract;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = HCloner;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -1324,7 +1591,8 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "FFGLPlugin-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = AddSubtract;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = HCloner;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -1427,6 +1695,120 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BA3179F626D01586000AF86B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(FFGL_SDK_PATH)\"",
+					../../source/lib,
+				);
+				INFOPLIST_FILE = "FFGLPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		BA3179F726D01586000AF86B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(FFGL_SDK_PATH)\"",
+					../../source/lib,
+				);
+				INFOPLIST_FILE = "FFGLPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BACA4E3726DF64F5009D2C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BACA4E3826DF64F5009D2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1592,7 +1974,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FD12268188540470009EBA8 /* Build configuration list for PBXNativeTarget "AddSubtract" */ = {
+		2FD12268188540470009EBA8 /* Build configuration list for PBXNativeTarget "HCloner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FD12269188540470009EBA8 /* Debug */,
@@ -1615,6 +1997,24 @@
 			buildConfigurations = (
 				A9F92EA7201A1C1500527E48 /* Debug */,
 				A9F92EA8201A1C1500527E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA3179F526D01586000AF86B /* Build configuration list for PBXNativeTarget "HTextChaser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3179F626D01586000AF86B /* Debug */,
+				BA3179F726D01586000AF86B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACA4E3626DF64F5009D2C19 /* Build configuration list for PBXNativeTarget "TestTrueType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACA4E3726DF64F5009D2C19 /* Debug */,
+				BACA4E3826DF64F5009D2C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

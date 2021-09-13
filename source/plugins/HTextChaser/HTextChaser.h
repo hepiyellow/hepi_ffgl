@@ -38,6 +38,7 @@ private:
     unsigned int PID_FONT_FILE_NAME;
     unsigned int PID_LAYOUT;
     unsigned int PID_SIZE;
+    unsigned int PID_LINE_WIDTH;
     unsigned int PID_POS_MULT;
     unsigned int PID_POS_X;
     unsigned int PID_POS_Y;

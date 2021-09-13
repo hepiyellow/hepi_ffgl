@@ -50,13 +50,22 @@ struct TextParams {
     float pos_y = 0;
     AlignmentHorizontal align_h = AlignmentHorizontal::Center;
     AlignmentVertical align_v = AlignmentVertical::Center;
+    
+    // Circle Mode
     float radius = 0.5;
     float rotation = 0;
+    bool rotateTogether = true;
+    
+    // Char Rotation
     float charRotation = 0;
     float charRotationFan = 0;
-    bool rotateTogether = true;
+    
+    // Spacing
+    float lineWidth = 1;
     float spacing_x = 1;
     SpacingMode spacing_x_mode = SpacingMode::Manual;
+    
+    // Chaser
     Range range = Range::Characters;
     float length = 0;
     float offset = 0;

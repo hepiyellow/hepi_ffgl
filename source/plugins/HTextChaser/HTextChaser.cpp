@@ -32,7 +32,7 @@ HTextChaser::HTextChaser()
     
     initFontOptions();
 
-    PID_TEXT            = AddParam( ParamText::create( "Text", "ABC" ) ); // index 0
+    PID_TEXT            = AddParam( ParamText::create( "Text", "ABC" ) );
     PID_FONT_FILE_NAME  = AddParam( ParamOption::Create( "Font", fontOptions, 0 ) );
     PID_LAYOUT          = AddParam( ParamOption::Create( "Layout", {{"Rows", 0}, {"Circle", 1}}, 0 ) );
     PID_SIZE            = AddParam( ParamRange::Create( "Size", 1, ParamRange::Range(0, 10) ) );
@@ -45,6 +45,7 @@ HTextChaser::HTextChaser()
                                 {{"Left", 0}, {"Center", 1}, {"Right", 2}}, 1 ) );
     PID_ALIGN_V         = AddParam( ParamOption::Create( "Alignment V",
                                 {{"Top", 0}, {"Center", 1}, {"Bottom", 2}}, 1 ) );
+    PID_LINE_WIDTH      = AddParam( Param::Create( "Line Width", 1 ) );
     PID_SPACING_X_MODE  = AddParam( ParamOption::Create( "Spacing X Mode",
                                 {{"Manual", 0}, {"AutoFit", 1}}, 0 ) );
     PID_SPACING_X       = AddParam( ParamRange::Create( "Spacing X", 1, ParamRange::Range(0, 10) ) );
@@ -124,7 +125,7 @@ FFResult HTextChaser::ProcessOpenGL( ProcessOpenGLStruct* pGL )
     p.length = GetParam(PID_LENGTH_NORM)->GetValue();
     p.offset = GetParam(PID_OFFSET_NORM)->GetValue();
     
-    
+    p.lineWidth = GetParam(PID_LINE_WIDTH)->GetValue();
     p.spacing_x = GetParam(PID_SPACING_X)->GetValue();
     p.spacing_x_mode = static_cast<SpacingMode>(GetParamOption(PID_SPACING_X_MODE)->GetRealValue());
     
@@ -142,7 +143,6 @@ FFResult HTextChaser::ProcessOpenGL( ProcessOpenGLStruct* pGL )
     //updateParamVisibility
     SetParamVisibility(PID_RADIUS, p.layout == Layout::Circle, true);
     SetParamVisibility(PID_ROTATION, p.layout == Layout::Circle, true);
-    SetParamVisibility(PID_CHAR_ROTATION, p.layout == Layout::Circle, true);
     SetParamVisibility(PID_CHAR_ROTATE_TOGETHER, p.layout == Layout::Circle, true);
 	return FF_SUCCESS;
 }

@@ -43,11 +43,6 @@ private:
     GLuint vaoID;
     GLuint vboID;
     
-    GLint viewportAspectLocation;
-
-    // Viewport
-    float viewportAspect = 1; // For 2D rotations
-    
     // Text Manipulation
     u16string getTextToDraw(TextParams &params);
         

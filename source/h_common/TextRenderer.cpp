@@ -57,29 +57,22 @@ bool TextRenderer::InitGL(const FFGLViewportStruct* vp) {
     {
         return false;
     }
-    
-    
+        
     fontRasterizer.InitGL();
-            
-    viewportAspect =  (float)vp->height / (float)vp->width;
-    log("TextRenderer::InitGL(): vp->width=" + to_string(vp->width) + ", vp->height=" + to_string(vp->height));
-    
+
     return true;
 }
-
-
-
 
 bool TextRenderer::DeInitGL() {
     rowLayout.DeInitGL();
     circleLayout.DeInitGL();
+    fontRasterizer.DeInitGL();
     
     glDeleteBuffers( 1, &vboID );
     vboID = 0;
     glDeleteVertexArrays( 1, &vaoID );
     vaoID = 0;
     
-    fontRasterizer.DeInitGL();
     
     return true;
 }
@@ -219,26 +212,3 @@ u16string TextRenderer::getTextToDraw(TextParams &params) {
     }
     return textToDraw;
 }
-
-void TextRenderer::updateVerticesWithAllCharacters()
-{
-    const int quadVertexCount = 6;
-    const std::string::size_type vertexCount = quadVertexCount;
-    
-    if (vertices.size() != vertexCount) {
-        vertices.resize(vertexCount);
-    }
-    
-    float s0 = 0, s1 = 1;
-    float t0 = 0, t1 = 1;
-    // top-left
-    float x0 = -1;
-    float y0 = 0.8;
-    // bottom-right
-    float x1 = 1;
-    float y1 = -0.8;
-    
-    int vertexIndex = 0;
-    utils::addQuadVertices({x0, y0, s0, t0, x1, y1, s1, t1}, vertices, &vertexIndex);
-}
-

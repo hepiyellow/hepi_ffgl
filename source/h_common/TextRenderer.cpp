@@ -104,7 +104,7 @@ void TextRenderer::draw(TextParams &params) {
     } else {
         layout = &circleLayout;
     }
-//    auto *layout = params.layout == Layout::Rows ?  &rowLayout : &circleLayout;
+    
     // Prepare OpenGL
     glUseProgram( layout->shader.GetGLID() );
     glActiveTexture( GL_TEXTURE0 ); // TODO: is this correct?
@@ -116,11 +116,7 @@ void TextRenderer::draw(TextParams &params) {
     //
     u16string textToDraw = getTextToDraw(params);
     layout->setUniforms(params, textToDraw);
-    if (params.layout == Layout::Rows) {
-        layout->updateVertices(params, textToDraw, fontRasterizer , vertices);
-    } else {
-        updateVerticesCircleLayout(params, textToDraw);
-    }
+    layout->updateVertices(params, textToDraw, fontRasterizer , vertices);
 
     //    updateVerticesWithAllCharacters(); // FOR DEBUG
     
@@ -222,56 +218,6 @@ u16string TextRenderer::getTextToDraw(TextParams &params) {
             
     }
     return textToDraw;
-}
-
-void TextRenderer::updateVerticesCircleLayout(TextParams &params, u16string text)
-{
-    
-    // I want the default to be that the letter 'a' takes 1/4 of the screen height;
-    // When params.size == 1 then the letter A's height would take 1/2 a screen height.
-    float appliedScale = params.size * (1.0f / fontRasterizer.getLetterAHeight());
-    
-    vector<TexturedQuadPoints> quads;
-    float x = 0;
-    float y = 0;
-//    float max_x = 0; // width
-//    float max_y = 0; // height
-
-//    float angleStepRad = PI_x2 / text.size();
-//    float radius = 0.25;
-    for (std::string::size_type charIndex = 0; charIndex < text.length(); charIndex++) {
-        const char16_t characterValue = text[charIndex];
-        
-        
-        // 01 - Get Char Quad
-        x = 0;
-        y = 0;
-        TexturedQuadPoints q;
-        fontRasterizer.getCharacterQuad(characterValue, &x, &y, q);
-        
-        // 02 Apply Scale
-        q.x0 *= appliedScale;
-        q.y0 *= appliedScale;
-        q.x1 *= appliedScale;
-        q.y1 *= appliedScale;
-        
-        // Put character centered around X=0. (anchor at (0,0))
-        float width = (q.x1 - q.x0)/2;
-        float height = (q.y1 - q.y0)/2;
-        
-        q.x0 =-width;
-        q.x1 =width;
-        q.y0 =-height;
-        q.y1 =height;
-        
-        quads.push_back(q);
-    }
-    
-    
-    
-    // Update vertices
-    updateVerticesFromQuads(quads, vertices);
-    
 }
 
 void TextRenderer::updateVerticesWithAllCharacters()

@@ -59,11 +59,6 @@ private:
     vector<GlVertexTextured> vertices;
     
     bool InitializeResources(std::string fontPath);
-    
-    
-    void updateVerticesCircleLayout(TextParams &params, u16string text);
     void updateVerticesWithAllCharacters();
-    
-    TexturedQuadPoints getCharacterQuad(char16_t characterValue, float *x, float *y);
 };
 

@@ -12,7 +12,10 @@
 #include <string>
 #include <FFGLSDK.h>
 #include "stb_truetype.h"
+#include "Utils.h"
+
 using namespace std;
+using namespace utils;
 
 class FontRasterizer {
 public:
@@ -22,7 +25,7 @@ public:
     void DeInitGL();
     void setFont(string fontFilePath);
     void updateFontTexture(std::u16string text);
-    void GetBakedQuad(char16_t characterValue, float *xpos, float *ypos, stbtt_aligned_quad *q);
+    void getCharacterQuad(char16_t characterValue, float *x, float *y, TexturedQuadPoints &tq);
     GLuint getTextureId();
     int getLetterAHeight();
 private:
@@ -43,6 +46,7 @@ private:
     bool initializeFont();
     bool initializeBakedFont(std::string fontFilePath); // Read font file and initialize a texture with all font characters (ftex)
    
+    void GetBakedQuad(char16_t characterValue, float *xpos, float *ypos, stbtt_aligned_quad *q);
     void createBakedTexture(unsigned char * ttf_buffer); // creates texture of all characters with texture id ftex
     void createGlyphTexture();
     int stbtt_BakeFontBitmap_internal_MY(int offset,  // font location (use offset=0 for plain .ttf)

@@ -166,6 +166,20 @@ void FontRasterizer::createBakedTexture(unsigned char * ttf_buffer) {
     FFGLLog::LogToHost( ("TextRenderer::createBakedTexture() - Texture Created with id=" + std::to_string(ftex)).c_str());
 }
 
+void FontRasterizer::getCharacterQuad(char16_t characterValue, float *x, float *y, TexturedQuadPoints &tq) {
+    stbtt_aligned_quad q;
+    
+    GetBakedQuad( characterValue, x,y,&q);
+    
+    tq.s0 = q.s0;
+    tq.s1 = q.s1;
+    tq.t0 = q.t1; tq.t1 = q.t0; // Flip vertically
+    tq.x0 = q.x0;
+    tq.y0 = q.y1;// flip
+    tq.x1 = q.x1;
+    tq.y1 = -q.y0; // positive y should be towards the top
+}
+
 void FontRasterizer::createGlyphTexture() {
     const int charHeight = 20;
     

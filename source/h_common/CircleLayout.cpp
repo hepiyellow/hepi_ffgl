@@ -20,6 +20,6 @@ void CircleLayout::setUniforms(TextParams params, u16string textToDraw) {
     shader.Set( "globalPosOffset", params.pos_x, params.pos_y );
 }
 
-void CircleLayout::updateVertices(TextParams params, u16string textToDraw) {
+void CircleLayout::updateVertices(TextParams params, u16string textToDraw, FontRasterizer &fr, vector<GlVertexTextured> &vertices) {
    
 }

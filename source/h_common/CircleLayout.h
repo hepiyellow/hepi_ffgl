@@ -11,5 +11,5 @@ class CircleLayout : public BaseLayout {
 public:
     bool InitGL(const FFGLViewportStruct* vp) override;
     void setUniforms(TextParams params, u16string textToDraw) override;
-    void updateVertices(TextParams params, u16string textToDraw) override;
+    void updateVertices(TextParams params, u16string textToDraw, FontRasterizer &fr, vector<GlVertexTextured> &vertices) override;
 };

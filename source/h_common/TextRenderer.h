@@ -13,6 +13,8 @@
 using namespace utils;
 using namespace ffglex;
 using namespace tr;
+using namespace std;
+
 
 class TextRenderer {
 public:
@@ -51,15 +53,14 @@ private:
         
     // Text CPU Rendering
     FontRasterizer fontRasterizer;
-    std::u16string lastText;
-    std::string lastFont = "";
+    u16string lastText;
+    string lastFont = "";
+    
+    vector<GlVertexTextured> vertices;
     
     bool InitializeResources(std::string fontPath);
     
-    // Vertex Stuff
-    std::vector<GlVertexTextured> vertices;
     
-    void updateVerticesRowsLayout(TextParams &params, u16string text);
     void updateVerticesCircleLayout(TextParams &params, u16string text);
     void updateVerticesWithAllCharacters();
     

@@ -20,34 +20,6 @@ using namespace ffglqs;
 using namespace tr;
 using namespace utils;
 
-static const char _vertexShaderCode[] = R"(#version 410 core
-layout( location = 0 ) in vec4 vPosition;
-layout( location = 1 ) in vec2 vUV;
-
-out vec2 uv;
-
-void main()
-{
-    gl_Position = vPosition;
-    uv = vUV;
-
-}
-)";
-
-// Geometry shader goes here !
-
-static const char _fragmentShaderCode[] = R"(#version 410 core
-uniform sampler2D InputTexture;
-
-in vec2 uv;
-out vec4 fragColor;
-
-void main()
-{
-    vec4 color = texture( InputTexture, uv );
-    fragColor = vec4(1.0, 1.0, 1.0, color.r);
-}
-)";
 
 
 TextRenderer::TextRenderer():
@@ -69,10 +41,11 @@ TextRenderer::~TextRenderer() {
 bool TextRenderer::InitGL(const FFGLViewportStruct* vp) {
     log("TextRenderer.InitGL()");
 
-    if( !shader.Compile( _vertexShaderCode, _fragmentShaderCode ) )
-    {
+    if (!rowLayout.InitGL()) {
         return false;
     }
+    
+  
     if( !circleShader.Compile( _circleVertexShaderCode, _circleGeometryShaderCode, _circleFragmentShaderCode ) ) {
         return false;
     }
@@ -99,7 +72,8 @@ bool TextRenderer::InitGL(const FFGLViewportStruct* vp) {
 
 
 bool TextRenderer::DeInitGL() {
-    shader.FreeGLResources();
+    rowLayout.DeInitGL();
+    
     circleShader.FreeGLResources();
     
     glDeleteBuffers( 1, &vboID );
@@ -127,7 +101,7 @@ void TextRenderer::updateFontTextureIfNeeded(string fontPath, u16string text) {
 void TextRenderer::draw(TextParams &params) {
 
     // Prepare OpenGL
-    glUseProgram( params.layout == Layout::Rows? shader.GetGLID(): circleShader.GetGLID() );
+    glUseProgram( params.layout == Layout::Rows? rowLayout.shader.GetGLID(): circleShader.GetGLID() );
     glActiveTexture( GL_TEXTURE0 ); // TODO: is this correct?
     glBindTexture(GL_TEXTURE_2D, fontRasterizer.getTextureId());
     
@@ -137,7 +111,7 @@ void TextRenderer::draw(TextParams &params) {
     //
     u16string textToDraw = getTextToDraw(params);
     if (params.layout == Layout::Rows) {
-        shader.Set( "inputTexture", 0 );
+        rowLayout.shader.Set( "inputTexture", 0 );
         updateVerticesRowsLayout(params, textToDraw);
     } else {
         // Set Uniforms

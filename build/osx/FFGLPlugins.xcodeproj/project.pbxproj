@@ -193,6 +193,8 @@
 		65D4D1ED23193DB000D12558 /* FFGLThumbnailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D4D1BF23193C9200D12558 /* FFGLThumbnailInfo.cpp */; };
 		65D4D1EE23193DB000D12558 /* FFGLThumbnailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D4D1BF23193C9200D12558 /* FFGLThumbnailInfo.cpp */; };
 		65D4D1F023193F7A00D12558 /* FFGLThumbnailInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65D4D1BF23193C9200D12558 /* FFGLThumbnailInfo.cpp */; };
+		BA25DEF926EFFD9D000F6E3E /* RowLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA25DEF726EFFD9D000F6E3E /* RowLayout.cpp */; };
+		BA25DEFC26EFFDD8000F6E3E /* BaseLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA25DEFA26EFFDD8000F6E3E /* BaseLayout.cpp */; };
 		BA3179D326D01586000AF86B /* FFGLParamFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480612306FD13007257C5 /* FFGLParamFFT.cpp */; };
 		BA3179D426D01586000AF86B /* FFGLParamOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6524807E2306FD14007257C5 /* FFGLParamOption.cpp */; };
 		BA3179D526D01586000AF86B /* FFGLUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708D421635F82002B8B05 /* FFGLUtilities.cpp */; };
@@ -439,6 +441,10 @@
 		A9F28D5818B37D0C007D7C87 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A9F28D5A18B37D12007D7C87 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A9F92EA9201A1C1500527E48 /* Particles.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Particles.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA25DEF726EFFD9D000F6E3E /* RowLayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RowLayout.cpp; sourceTree = "<group>"; };
+		BA25DEF826EFFD9D000F6E3E /* RowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RowLayout.h; sourceTree = "<group>"; };
+		BA25DEFA26EFFDD8000F6E3E /* BaseLayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseLayout.cpp; sourceTree = "<group>"; };
+		BA25DEFB26EFFDD8000F6E3E /* BaseLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLayout.h; sourceTree = "<group>"; };
 		BA3179F826D01586000AF86B /* HTextChaser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTextChaser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA49A4E926E40099003020DC /* TextRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderer.cpp; sourceTree = "<group>"; };
 		BA49A4EA26E40099003020DC /* TextRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextRenderer.h; sourceTree = "<group>"; };
@@ -744,10 +750,12 @@
 		BA49A4E826E4007E003020DC /* h_common */ = {
 			isa = PBXGroup;
 			children = (
-				BACA4E3E26E1FF09009D2C19 /* stb_truetype.cpp */,
-				BACA4E2526DE180C009D2C19 /* stb_truetype.h */,
 				BA49A4E926E40099003020DC /* TextRenderer.cpp */,
 				BA49A4EA26E40099003020DC /* TextRenderer.h */,
+				BA25DEF726EFFD9D000F6E3E /* RowLayout.cpp */,
+				BA25DEF826EFFD9D000F6E3E /* RowLayout.h */,
+				BA25DEFA26EFFDD8000F6E3E /* BaseLayout.cpp */,
+				BA25DEFB26EFFDD8000F6E3E /* BaseLayout.h */,
 				BA49A4FB26E64BAD003020DC /* FontRasterizer.cpp */,
 				BA49A4FC26E64BAD003020DC /* FontRasterizer.h */,
 				BACA4E4026E3770F009D2C19 /* Utils.cpp */,
@@ -758,6 +766,8 @@
 				BA9616E926EA23A700C6FD9F /* FontManager.h */,
 				BA5E31B826EB939200140FD4 /* HPlugin.cpp */,
 				BA5E31B926EB939200140FD4 /* HPlugin.h */,
+				BACA4E3E26E1FF09009D2C19 /* stb_truetype.cpp */,
+				BACA4E2526DE180C009D2C19 /* stb_truetype.h */,
 				BAE5231726ED0A2100FE26C6 /* circleShaders.h */,
 			);
 			name = h_common;
@@ -1279,6 +1289,7 @@
 				BA49A4EC26E4059E003020DC /* TextRenderer.cpp in Sources */,
 				BA49A4FD26E64BAD003020DC /* FontRasterizer.cpp in Sources */,
 				BA49A4F826E517AD003020DC /* HTextChaser.cpp in Sources */,
+				BA25DEFC26EFFDD8000F6E3E /* BaseLayout.cpp in Sources */,
 				BA3179D326D01586000AF86B /* FFGLParamFFT.cpp in Sources */,
 				BA3179D426D01586000AF86B /* FFGLParamOption.cpp in Sources */,
 				BA3179D526D01586000AF86B /* FFGLUtilities.cpp in Sources */,
@@ -1289,6 +1300,7 @@
 				BA3179DA26D01586000AF86B /* FFGLPluginInfo.cpp in Sources */,
 				BA3179DB26D01586000AF86B /* FFGLLog.cpp in Sources */,
 				BA3179DC26D01586000AF86B /* FFGLPluginInfoData.cpp in Sources */,
+				BA25DEF926EFFD9D000F6E3E /* RowLayout.cpp in Sources */,
 				BA3179DD26D01586000AF86B /* FFGL.cpp in Sources */,
 				BA3179DE26D01586000AF86B /* FFGLScopedRenderBufferBinding.cpp in Sources */,
 				BA9616EA26EA23A700C6FD9F /* FontManager.cpp in Sources */,

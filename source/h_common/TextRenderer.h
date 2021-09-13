@@ -13,6 +13,7 @@
 #include <FFGLSDK.h>
 #include "FontRasterizer.h"
 #include "Utils.h"
+#include "RowLayout.h"
 
 using namespace utils;
 
@@ -94,8 +95,10 @@ public:
     void draw(TextParams &params);
     
 private:
+    RowLayout rowLayout;
+    
     // OpenGL
-    ffglex::FFGLShader shader;
+    
     ffglex::FFGLShader circleShader;
     GLuint vaoID;
     GLuint vboID;

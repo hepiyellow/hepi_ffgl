@@ -140,10 +140,10 @@ FFResult HTextChaser::ProcessOpenGL( ProcessOpenGLStruct* pGL )
     
     
     //updateParamVisibility
-    SetParamVisibility(PID_RADIUS, p.layout == Layout::Circle);
-    SetParamVisibility(PID_ROTATION, p.layout == Layout::Circle);
-    SetParamVisibility(PID_CHAR_ROTATION, p.layout == Layout::Circle);
-    SetParamVisibility(PID_CHAR_ROTATE_TOGETHER, p.layout == Layout::Circle);
+    SetParamVisibility(PID_RADIUS, p.layout == Layout::Circle, true);
+    SetParamVisibility(PID_ROTATION, p.layout == Layout::Circle, true);
+    SetParamVisibility(PID_CHAR_ROTATION, p.layout == Layout::Circle, true);
+    SetParamVisibility(PID_CHAR_ROTATE_TOGETHER, p.layout == Layout::Circle, true);
 	return FF_SUCCESS;
 }
 

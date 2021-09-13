@@ -448,6 +448,7 @@
 		BA25DEFB26EFFDD8000F6E3E /* BaseLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLayout.h; sourceTree = "<group>"; };
 		BA25DEFD26F00193000F6E3E /* CircleLayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircleLayout.cpp; sourceTree = "<group>"; };
 		BA25DEFE26F00193000F6E3E /* CircleLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		BA25DF0026F0073F000F6E3E /* TextRendererTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextRendererTypes.h; sourceTree = "<group>"; };
 		BA3179F826D01586000AF86B /* HTextChaser.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTextChaser.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA49A4E926E40099003020DC /* TextRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderer.cpp; sourceTree = "<group>"; };
 		BA49A4EA26E40099003020DC /* TextRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextRenderer.h; sourceTree = "<group>"; };
@@ -755,6 +756,7 @@
 			children = (
 				BA49A4E926E40099003020DC /* TextRenderer.cpp */,
 				BA49A4EA26E40099003020DC /* TextRenderer.h */,
+				BA25DF0026F0073F000F6E3E /* TextRendererTypes.h */,
 				BA25DEF726EFFD9D000F6E3E /* RowLayout.cpp */,
 				BA25DEF826EFFD9D000F6E3E /* RowLayout.h */,
 				BA25DEFD26F00193000F6E3E /* CircleLayout.cpp */,
@@ -1292,6 +1294,8 @@
 				BA49A4EE26E405E1003020DC /* Utils.cpp in Sources */,
 				BA49A4ED26E405CC003020DC /* stb_truetype.cpp in Sources */,
 				BA49A4EC26E4059E003020DC /* TextRenderer.cpp in Sources */,
+				BA25DEFF26F00193000F6E3E /* CircleLayout.cpp in Sources */,
+				BA25DEF926EFFD9D000F6E3E /* RowLayout.cpp in Sources */,
 				BA49A4FD26E64BAD003020DC /* FontRasterizer.cpp in Sources */,
 				BA49A4F826E517AD003020DC /* HTextChaser.cpp in Sources */,
 				BA25DEFC26EFFDD8000F6E3E /* BaseLayout.cpp in Sources */,
@@ -1305,9 +1309,7 @@
 				BA3179DA26D01586000AF86B /* FFGLPluginInfo.cpp in Sources */,
 				BA3179DB26D01586000AF86B /* FFGLLog.cpp in Sources */,
 				BA3179DC26D01586000AF86B /* FFGLPluginInfoData.cpp in Sources */,
-				BA25DEF926EFFD9D000F6E3E /* RowLayout.cpp in Sources */,
 				BA3179DD26D01586000AF86B /* FFGL.cpp in Sources */,
-				BA25DEFF26F00193000F6E3E /* CircleLayout.cpp in Sources */,
 				BA3179DE26D01586000AF86B /* FFGLScopedRenderBufferBinding.cpp in Sources */,
 				BA9616EA26EA23A700C6FD9F /* FontManager.cpp in Sources */,
 				BA3179DF26D01586000AF86B /* FFGLParamEvent.cpp in Sources */,

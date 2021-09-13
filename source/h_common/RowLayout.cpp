@@ -29,11 +29,20 @@ void main()
 }
 )";
 
-bool RowLayout::InitGL() {
+bool RowLayout::InitGL(const FFGLViewportStruct *vp) {
     if( !shader.Compile( _vertexShaderCode, _fragmentShaderCode ) )
     {
         return false;
     }
-    return true;
+    return BaseLayout::InitGL(vp);
 }
+
+void RowLayout::setUniforms(TextParams params, u16string textToDraw) {
+    shader.Set( "inputTexture", 0 );    
+}
+
+void RowLayout::updateVertices(TextParams params, u16string textToDraw) {
+    
+}
+
 

@@ -41,11 +41,11 @@ TextRenderer::~TextRenderer() {
 bool TextRenderer::InitGL(const FFGLViewportStruct* vp) {
     log("TextRenderer.InitGL()");
 
-    if (!rowLayout.InitGL()) {
+    if (!rowLayout.InitGL(vp)) {
         return false;
     }
     
-    if( !circleLayout.InitGL()) {
+    if( !circleLayout.InitGL(vp)) {
         return false;
     }
     FFGLLog::LogToHost("TextRenderer.InitGL() shaders compiled");
@@ -115,21 +115,10 @@ void TextRenderer::draw(TextParams &params) {
     
     //
     u16string textToDraw = getTextToDraw(params);
+    layout->setUniforms(params, textToDraw);
     if (params.layout == Layout::Rows) {
-        layout->shader.Set( "inputTexture", 0 );
         updateVerticesRowsLayout(params, textToDraw);
     } else {
-        // Set Uniforms
-        layout->shader.Set( "inputTexture", 0 );
-        layout->shader.Set( "viewportAspect", viewportAspect );
-        layout->shader.Set( "textLength", (int) textToDraw.length() );
-        layout->shader.Set( "radius", params.radius );
-        layout->shader.Set( "rotation", params.rotation );
-        layout->shader.Set( "charRotation", params.charRotation );
-        layout->shader.Set( "charRotationFan", params.charRotationFan );
-        layout->shader.Set( "rotateTogether", params.rotateTogether ? (float) 1.0 : (float) 0.0 );
-        layout->shader.Set( "globalPosOffset", params.pos_x, params.pos_y );
-        
         updateVerticesCircleLayout(params, textToDraw);
     }
 

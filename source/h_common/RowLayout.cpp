@@ -37,7 +37,3 @@ bool RowLayout::InitGL() {
     return true;
 }
 
-void RowLayout::DeInitGL() {
-    shader.FreeGLResources();
-}
-

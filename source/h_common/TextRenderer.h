@@ -14,6 +14,7 @@
 #include "FontRasterizer.h"
 #include "Utils.h"
 #include "RowLayout.h"
+#include "CircleLayout.h"
 
 using namespace utils;
 
@@ -96,6 +97,7 @@ public:
     
 private:
     RowLayout rowLayout;
+    CircleLayout circleLayout;
     
     // OpenGL
     

@@ -45,11 +45,10 @@ bool TextRenderer::InitGL(const FFGLViewportStruct* vp) {
         return false;
     }
     
-  
-    if( !circleShader.Compile( _circleVertexShaderCode, _circleGeometryShaderCode, _circleFragmentShaderCode ) ) {
+    if( !circleLayout.InitGL()) {
         return false;
     }
-    FFGLLog::LogToHost("TextRenderer.InitGL() shader compiled");
+    FFGLLog::LogToHost("TextRenderer.InitGL() shaders compiled");
     
     
     glGenVertexArrays( 1, &vaoID );
@@ -73,8 +72,7 @@ bool TextRenderer::InitGL(const FFGLViewportStruct* vp) {
 
 bool TextRenderer::DeInitGL() {
     rowLayout.DeInitGL();
-    
-    circleShader.FreeGLResources();
+    circleLayout.DeInitGL();
     
     glDeleteBuffers( 1, &vboID );
     vboID = 0;
@@ -100,8 +98,15 @@ void TextRenderer::updateFontTextureIfNeeded(string fontPath, u16string text) {
 
 void TextRenderer::draw(TextParams &params) {
 
+    BaseLayout *layout;
+    if (params.layout == Layout::Rows) {
+        layout = &rowLayout;
+    } else {
+        layout = &circleLayout;
+    }
+//    auto *layout = params.layout == Layout::Rows ?  &rowLayout : &circleLayout;
     // Prepare OpenGL
-    glUseProgram( params.layout == Layout::Rows? rowLayout.shader.GetGLID(): circleShader.GetGLID() );
+    glUseProgram( layout->shader.GetGLID() );
     glActiveTexture( GL_TEXTURE0 ); // TODO: is this correct?
     glBindTexture(GL_TEXTURE_2D, fontRasterizer.getTextureId());
     
@@ -111,19 +116,19 @@ void TextRenderer::draw(TextParams &params) {
     //
     u16string textToDraw = getTextToDraw(params);
     if (params.layout == Layout::Rows) {
-        rowLayout.shader.Set( "inputTexture", 0 );
+        layout->shader.Set( "inputTexture", 0 );
         updateVerticesRowsLayout(params, textToDraw);
     } else {
         // Set Uniforms
-        circleShader.Set( "inputTexture", 0 );
-        circleShader.Set( "viewportAspect", viewportAspect );
-        circleShader.Set( "textLength", (int) textToDraw.length() );
-        circleShader.Set( "radius", params.radius );
-        circleShader.Set( "rotation", params.rotation );
-        circleShader.Set( "charRotation", params.charRotation );
-        circleShader.Set( "charRotationFan", params.charRotationFan );
-        circleShader.Set( "rotateTogether", params.rotateTogether ? (float) 1.0 : (float) 0.0 );
-        circleShader.Set( "globalPosOffset", params.pos_x, params.pos_y );
+        layout->shader.Set( "inputTexture", 0 );
+        layout->shader.Set( "viewportAspect", viewportAspect );
+        layout->shader.Set( "textLength", (int) textToDraw.length() );
+        layout->shader.Set( "radius", params.radius );
+        layout->shader.Set( "rotation", params.rotation );
+        layout->shader.Set( "charRotation", params.charRotation );
+        layout->shader.Set( "charRotationFan", params.charRotationFan );
+        layout->shader.Set( "rotateTogether", params.rotateTogether ? (float) 1.0 : (float) 0.0 );
+        layout->shader.Set( "globalPosOffset", params.pos_x, params.pos_y );
         
         updateVerticesCircleLayout(params, textToDraw);
     }

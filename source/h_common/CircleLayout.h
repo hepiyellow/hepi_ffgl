@@ -5,7 +5,7 @@
 
 using namespace ffglex;
 
-class RowLayout : public BaseLayout {
+class CircleLayout : public BaseLayout {
 public:
     bool InitGL() override;
 };

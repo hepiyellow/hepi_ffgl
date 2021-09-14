@@ -280,7 +280,6 @@
 		F49A35E7264ECC2A008127CC /* FFGLEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 652480652306FD13007257C5 /* FFGLEffect.cpp */; };
 		F49A35E8264ECC2A008127CC /* FFGLShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B2708E321635F83002B8B05 /* FFGLShader.cpp */; };
 		F49A35E9264ECC2A008127CC /* FFGLSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6524805F2306FD13007257C5 /* FFGLSource.cpp */; };
-		F49A35FA264ECCB1008127CC /* FFGLEvents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F49A35F9264ECCB1008127CC /* FFGLEvents.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -465,8 +464,6 @@
 		F442E338253DE801008313C0 /* FFGLLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFGLLog.cpp; sourceTree = "<group>"; };
 		F442E339253DE801008313C0 /* FFGLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFGLLog.h; sourceTree = "<group>"; };
 		F49A35EE264ECC2A008127CC /* Events.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Events.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F49A35F8264ECCB1008127CC /* FFGLEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFGLEvents.h; path = ../../source/plugins/Events/FFGLEvents.h; sourceTree = "<group>"; };
-		F49A35F9264ECCB1008127CC /* FFGLEvents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FFGLEvents.cpp; path = ../../source/plugins/Events/FFGLEvents.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,7 +567,6 @@
 				D69416961B9040DA00D30319 /* PluginIds.txt */,
 				E8D767450C9195D90089BAEB /* source plugins */,
 				E8D165D30C5E174D0035D796 /* effect plugins */,
-				E8D165D40C5E177A0035D796 /* mixer plugins */,
 				E8D161130C5DF1DF0035D796 /* frameworks */,
 				2FD12214188538AC0009EBA8 /* source */,
 				2DA285A10AEE5E480030A4DD /* Products */,
@@ -804,29 +800,12 @@
 			name = "effect plugins";
 			sourceTree = "<group>";
 		};
-		E8D165D40C5E177A0035D796 /* mixer plugins */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "mixer plugins";
-			sourceTree = "<group>";
-		};
 		E8D767450C9195D90089BAEB /* source plugins */ = {
 			isa = PBXGroup;
 			children = (
-				F49A35F7264ECC9C008127CC /* Events */,
 				BA49A4F526E517AD003020DC /* HTextChaser */,
 			);
 			name = "source plugins";
-			sourceTree = "<group>";
-		};
-		F49A35F7264ECC9C008127CC /* Events */ = {
-			isa = PBXGroup;
-			children = (
-				F49A35F9264ECCB1008127CC /* FFGLEvents.cpp */,
-				F49A35F8264ECCB1008127CC /* FFGLEvents.h */,
-			);
-			name = Events;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1342,7 +1321,6 @@
 				F49A35CB264ECC2A008127CC /* FFGLUtilities.cpp in Sources */,
 				F49A35CC264ECC2A008127CC /* FFGLPluginManager.cpp in Sources */,
 				F49A35CD264ECC2A008127CC /* FFGLScopedBufferBinding.cpp in Sources */,
-				F49A35FA264ECCB1008127CC /* FFGLEvents.cpp in Sources */,
 				F49A35CE264ECC2A008127CC /* FFGLScopedShaderBinding.cpp in Sources */,
 				F49A35CF264ECC2A008127CC /* FFGLPlugin.cpp in Sources */,
 				F49A35D0264ECC2A008127CC /* FFGLPluginInfo.cpp in Sources */,

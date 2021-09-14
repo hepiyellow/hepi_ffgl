@@ -53,7 +53,7 @@ HTextChaser::HTextChaser()
     PID_CHAR_ROTATION   =  AddParam( Param::Create( "C.Rotation", 0 ) );
     PID_CHAR_ROTATION_FAN = AddParam( ParamRange::Create( "C.Rotation Fan", 0, ParamRange::Range(-1,1) ) );
     PID_CHAR_ROTATE_TOGETHER = AddParam( ParamBool::Create( "Concentric", 0) );
-    PID_RANGE = AddParam( ParamOption::Create( "Range", {{"Characters", 0}, {"Words", 1}, {"Lines", 2}}, 1 ) );
+    PID_RANGE = AddParam( ParamOption::Create( "Range", {{"Characters", 0}, {"Words", 1}}, 1 ) );
     PID_LENGTH_NORM = AddParam( Param::Create( "Length", 1 ) );
     PID_OFFSET_NORM = AddParam( Param::Create( "Offset", 0 ) );
     
@@ -121,6 +121,8 @@ FFResult HTextChaser::ProcessOpenGL( ProcessOpenGLStruct* pGL )
     p.pos_y = GetParam(PID_POS_Y)->GetValue() * posMult;
     p.align_h = static_cast<AlignmentHorizontal>(GetParamOption(PID_ALIGN_H)->GetRealValue());
     p.align_v = static_cast<AlignmentVertical>(GetParamOption(PID_ALIGN_V)->GetRealValue());
+    
+    // Chaser
     p.range = static_cast<Range>(GetParamOption(PID_RANGE)->GetRealValue());
     p.length = GetParam(PID_LENGTH_NORM)->GetValue();
     p.offset = GetParam(PID_OFFSET_NORM)->GetValue();
@@ -144,6 +146,7 @@ FFResult HTextChaser::ProcessOpenGL( ProcessOpenGLStruct* pGL )
     SetParamVisibility(PID_RADIUS, p.layout == Layout::Circle, true);
     SetParamVisibility(PID_ROTATION, p.layout == Layout::Circle, true);
     SetParamVisibility(PID_CHAR_ROTATE_TOGETHER, p.layout == Layout::Circle, true);
+    
 	return FF_SUCCESS;
 }
 

@@ -157,7 +157,7 @@ u16string TextRenderer::getTextToDraw(TextParams &params) {
     u16string textToDraw;
     switch (mode) {
         case Range::Characters: {
-            const int length = lengthNorm == 1 ? (int) originalText.length() : floor((originalText.length()+1) * lengthNorm);
+           	const int length = lengthNorm == 1 ? (int) originalText.length() : floor((originalText.length()+1) * lengthNorm);
             const int offsetIndex = (int) (offsetNorm == 1 ? originalText.length() - 1 : floor(originalText.length() * offsetNorm));
             for (int i=0; i < length; i++ ) {
                 textToDraw += originalText[(offsetIndex + i) % originalText.length()];
@@ -179,35 +179,35 @@ u16string TextRenderer::getTextToDraw(TextParams &params) {
             words.push_back(originalText.substr(start, end));
             
             const int length = lengthNorm == 1 ? (int) words.size() : floor((words.size() + 1) * lengthNorm);
-            const int offsetIndex = (int) (offsetNorm == 1 ? originalText.length() - 1 : floor(originalText.length() * offsetNorm));
+            const int offsetIndex = (int) (offsetNorm == 1 ? words.size() - 1 : floor(words.size() * offsetNorm));
             for (int i=0; i < length; i++ ) {
                 const u16string space = toUtf16((i < length - 1) ? " " : "");
                 textToDraw += words[(offsetIndex + i) % words.size()] + space;
             }
             break;
         }
-        case Range::Lines: {
-            vector<u16string> lines;
-            std::u16string delimiter = toUtf16("\n");
-            int start = 0;
-            int end = (int) originalText.find(delimiter);
-            while (end != std::string::npos)
-            {
-                lines.push_back(originalText.substr(start, end - start));
-                start = (int)(end + delimiter.length());
-                end = (int) originalText.find(delimiter, start);
-            }
-
-            lines.push_back(originalText.substr(start, end));
-            
-            const int length = lengthNorm == 1 ? (int) lines.size() : floor((lines.size() + 1) * lengthNorm);
-            const int offsetIndex = (int) (offsetNorm == 1 ? originalText.length() - 1 : floor(originalText.length() * offsetNorm));
-            for (int i=0; i < length; i++ ) {
-                const u16string newLine = toUtf16((i < length - 1) ? "\n" : "");
-                textToDraw += lines[(offsetIndex + i) % lines.size()] + newLine;
-            }
-            break;
-        }
+//        case Range::Lines: {
+//            vector<u16string> lines;
+//            std::u16string delimiter = toUtf16("\n");
+//            int start = 0;
+//            int end = (int) originalText.find(delimiter);
+//            while (end != std::string::npos)
+//            {
+//                lines.push_back(originalText.substr(start, end - start));
+//                start = (int)(end + delimiter.length());
+//                end = (int) originalText.find(delimiter, start);
+//            }
+//
+//            lines.push_back(originalText.substr(start, end));
+//
+//            const int length = lengthNorm == 1 ? (int) lines.size() : floor((lines.size() + 1) * lengthNorm);
+//            const int offsetIndex = (int) (offsetNorm == 1 ? lines.size() - 1 : floor(lines.size() * offsetNorm));
+//            for (int i=0; i < length; i++ ) {
+//                const u16string newLine = toUtf16((i < length - 1) ? "\n" : "");
+//                textToDraw += lines[(offsetIndex + i) % lines.size()] + newLine;
+//            }
+//            break;
+//        }
             
     }
     return textToDraw;

@@ -20,8 +20,7 @@ enum class AlignmentVertical {
 
 enum class Range {
     Characters,
-    Words,
-    Lines
+    Words
 };
 
 enum class Layout {
